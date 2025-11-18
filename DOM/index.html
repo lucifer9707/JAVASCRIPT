@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: black;
+        }  
+        .small-box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 10px;
+        }  
+
+        .big-box{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            border-radius: 999px;
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="small-box boxy-box" id="box"></div>
+        <button class="btn" style="background-color: greenyellow; ">Click Me!</button>
+    
+   
+    
+    <script>
+        const box = document.getElementById('box');
+        const btn = document.querySelector('.btn');
+        btn.addEventListener("click", function(){
+            // box.style.height = "400px";
+            // box.style.width = "400px";
+            // box.style.backgroundColor = "red";
+            box.classList.toggle('big-box');
+            box.classList.toggle('small-box');
+            
+        });
+    </script>
+</body> 
+</html>

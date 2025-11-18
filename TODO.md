@@ -1,0 +1,1 @@
+- [ ] Edit pattern.js to add missing console.log(pattern); and closing braces for the loops
